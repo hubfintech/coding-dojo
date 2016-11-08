@@ -31,10 +31,10 @@ class FizzBuzz
   def call(n)
     arr = []
 
-    fizz = i % 3 == 0
-    buzz = i % 5 == 0
-
     1.upto(n) do |i|
+      fizz = i % 3 == 0
+      buzz = i % 5 == 0
+
       if fizz && buzz
         arr << 'FizzBuzz'
       elsif fizz
